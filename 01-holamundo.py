@@ -2,12 +2,13 @@ from tkinter import Button
 from tkinter import Label
 from tkinter import Tk
 
-app = Tk()
+ventana = Tk()
+ventana.title("Aplicación grafica en Python")
 
-app.title("Aplicación grafica en Python")
-etiqueta = Label(app, text="Hola Mundo")
-boton = Button(app, text="OK")
+etiqueta = Label(ventana, text="Hola Mundo")
+boton = Button(ventana, text="OK")
 
 etiqueta.pack()
 boton.pack()
-app.mainloop()
+
+ventana.mainloop()
